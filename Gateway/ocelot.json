@@ -4,11 +4,11 @@
   },
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/booking/{id}",
+      "DownstreamPathTemplate": "/api/bookingmodels/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://localhost",
+          "Host": "localhost",
           "Port": 7001
         }
       ],
@@ -16,11 +16,11 @@
       "UpstreamHttpMethod": [ "Get", "Delete" ]
     },
     {
-      "DownstreamPathTemplate": "/api/booking",
+      "DownstreamPathTemplate": "/api/bookingmodels",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://localhost",
+          "Host": "localhost",
           "Port": 7001
         }
       ],
