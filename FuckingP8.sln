@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMI", "HMI\HMI.csproj", "{1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking", "Booking\Booking.csproj", "{BC42DBFB-4546-4A13-BB4D-3576570B46A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{4ADB2755-2727-437C-89B5-CCBA7802DF1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BC42DBFB-4546-4A13-BB4D-3576570B46A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC42DBFB-4546-4A13-BB4D-3576570B46A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC42DBFB-4546-4A13-BB4D-3576570B46A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADB2755-2727-437C-89B5-CCBA7802DF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADB2755-2727-437C-89B5-CCBA7802DF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADB2755-2727-437C-89B5-CCBA7802DF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADB2755-2727-437C-89B5-CCBA7802DF1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
