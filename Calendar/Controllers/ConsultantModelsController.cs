@@ -1,17 +1,17 @@
-﻿using Booking.Data;
-using Booking.Models;
+﻿using Calendar.Data;
+using Calendar.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Booking.Controllers
+namespace Calendar.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ConsultantModelsController : ControllerBase
     {
-        private readonly BookingDbContext _context;
+        private readonly CalendarDbContext _context;
 
-        public ConsultantModelsController(BookingDbContext context)
+        public ConsultantModelsController(CalendarDbContext context)
         {
             _context = context;
         }
@@ -83,7 +83,7 @@ namespace Booking.Controllers
         {
           if (_context.Consultants == null)
           {
-              return Problem("Entity set 'BookingDbContext.Consultants'  is null.");
+              return Problem("Entity set 'CalendarDbContext.Consultants'  is null.");
           }
             _context.Consultants.Add(consultantModel);
             await _context.SaveChangesAsync();

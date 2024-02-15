@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking", "Booking\Booking.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{4ADB2755-2727-437C-89B5-CCBA7802DF1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar", "Calendar\Calendar.csproj", "{5BAAC7BA-AD2B-4FF7-BF91-74A9F201E795}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4ADB2755-2727-437C-89B5-CCBA7802DF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ADB2755-2727-437C-89B5-CCBA7802DF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4ADB2755-2727-437C-89B5-CCBA7802DF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BAAC7BA-AD2B-4FF7-BF91-74A9F201E795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAAC7BA-AD2B-4FF7-BF91-74A9F201E795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAAC7BA-AD2B-4FF7-BF91-74A9F201E795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAAC7BA-AD2B-4FF7-BF91-74A9F201E795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
