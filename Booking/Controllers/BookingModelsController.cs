@@ -2,6 +2,7 @@
 using Booking.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.Intrinsics.Arm;
 
 namespace Booking.Controllers
 {
@@ -20,10 +21,10 @@ namespace Booking.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookingModel>>> GetBookings()
         {
-          if (_context.Bookings == null)
-          {
-              return NotFound();
-          }
+            if (_context.Bookings == null)
+            {
+                return NotFound();
+            }
             return await _context.Bookings.ToListAsync();
         }
 
@@ -31,10 +32,10 @@ namespace Booking.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<BookingModel>> GetBookingModel(int id)
         {
-          if (_context.Bookings == null)
-          {
-              return NotFound();
-          }
+            if (_context.Bookings == null)
+            {
+                return NotFound();
+            }
             var bookingModel = await _context.Bookings.FindAsync(id);
 
             if (bookingModel == null)
@@ -81,10 +82,10 @@ namespace Booking.Controllers
         [HttpPost]
         public async Task<ActionResult<BookingModel>> PostBookingModel(BookingModel bookingModel)
         {
-          if (_context.Bookings == null)
-          {
-              return Problem("Entity set 'BookingDbContext.Bookings'  is null.");
-          }
+            if (_context.Bookings == null)
+            {
+                return Problem("Entity set 'BookingDbContext.Bookings'  is null.");
+            }
             _context.Bookings.Add(bookingModel);
             await _context.SaveChangesAsync();
 

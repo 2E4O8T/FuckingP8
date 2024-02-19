@@ -16,10 +16,13 @@ namespace Booking.Data
             modelBuilder.Entity<BookingModel>();
             modelBuilder.Entity<ConsultantModel>();
             modelBuilder.Entity<PatientModel>();
+            modelBuilder.Entity<SimpleBookingModel>();
         }
 
         public DbSet<BookingModel> Bookings { get; set; }
         public DbSet<ConsultantModel> Consultants { get; set; }
         public DbSet<PatientModel> Patients { get; set; }
+        public DbSet<SimpleBookingModel> SimpleBookings { get; set; }
+
     }
 }

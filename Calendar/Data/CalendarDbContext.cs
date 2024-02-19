@@ -15,9 +15,11 @@ namespace Calendar.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<CalendarModel>();
             modelBuilder.Entity<ConsultantModel>();
+            modelBuilder.Entity<ConsultantCalendarModel>();
         }
 
         public DbSet<CalendarModel> Calendars { get; set; }
         public DbSet<ConsultantModel> Consultants { get; set; }
+        public DbSet<ConsultantCalendarModel> ConsultantsCalendars { get;set; }
     }
 }

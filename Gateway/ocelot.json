@@ -4,6 +4,30 @@
   },
   "Routes": [
     {
+      "DownstreamPathTemplate": "/api/simplebookingmodels/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/simplebooking/{id}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/simplebookingmodels",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/simplebooking",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
       "DownstreamPathTemplate": "/api/bookingmodels/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -25,6 +49,30 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/booking",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/calendarmodels/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/calendar/{id}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/calendarmodels",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/calendar",
       "UpstreamHttpMethod": [ "Get", "Post" ]
     }
   ]

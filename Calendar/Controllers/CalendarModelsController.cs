@@ -20,10 +20,10 @@ namespace Calendar.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CalendarModel>>> GetCalendars()
         {
-          if (_context.Calendars == null)
-          {
-              return NotFound();
-          }
+            if (_context.Calendars == null)
+            {
+                return NotFound();
+            }
             return await _context.Calendars.ToListAsync();
         }
 
@@ -31,10 +31,10 @@ namespace Calendar.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<CalendarModel>> GetCalendarModel(int id)
         {
-          if (_context.Calendars == null)
-          {
-              return NotFound();
-          }
+            if (_context.Calendars == null)
+            {
+                return NotFound();
+            }
             var calendarModel = await _context.Calendars.FindAsync(id);
 
             if (calendarModel == null)
@@ -81,10 +81,10 @@ namespace Calendar.Controllers
         [HttpPost]
         public async Task<ActionResult<CalendarModel>> PostCalendarModel(CalendarModel calendarModel)
         {
-          if (_context.Calendars == null)
-          {
-              return Problem("Entity set 'CalendarDbContext.Calendars'  is null.");
-          }
+            if (_context.Calendars == null)
+            {
+                return Problem("Entity set 'CalendarDbContext.Calendars'  is null.");
+            }
             _context.Calendars.Add(calendarModel);
             await _context.SaveChangesAsync();
 
